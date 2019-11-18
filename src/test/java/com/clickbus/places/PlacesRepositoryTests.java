@@ -1,8 +1,8 @@
 package com.clickbus.places;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -68,7 +68,7 @@ public class PlacesRepositoryTests {
     @Test
     public void testGetPlaceById_NotFound() {
         Optional<PlaceEntity> place = repository.findById((long) 10);
-        assertTrue(place.isEmpty());
+        assertFalse(place.isPresent());
     }
     
     @Test
