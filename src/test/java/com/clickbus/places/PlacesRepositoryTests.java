@@ -18,6 +18,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.clickbus.places.config.H2TestConfig;
 import com.clickbus.places.domain.entities.PlaceEntity;
 import com.clickbus.places.repositories.PlacesRepository;
 

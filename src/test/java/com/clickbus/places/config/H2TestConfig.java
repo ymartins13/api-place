@@ -1,4 +1,4 @@
-package com.clickbus.places;
+package com.clickbus.places.config;
 
 import javax.sql.DataSource;
 
